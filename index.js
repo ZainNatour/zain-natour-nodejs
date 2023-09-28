@@ -24,8 +24,11 @@ fs.readFile(objectsPath, (err, data) => {
           const words = text.trim().split(/\s+|\n+/);
           //   word count in each file
           const wordCount = words.length;
-
-          console.log(`File: ${fileName}: ${wordCount} words`);
+          if (wordCount == 0) {
+            console.log("The file is empty");
+          } else {
+            console.log(`File: ${fileName}: ${wordCount} words`);
+          }
         }
       });
     });
