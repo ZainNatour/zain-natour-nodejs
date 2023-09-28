@@ -1,0 +1,3 @@
+files/file1.txt: 75 words
+files/file2.txt: 103 words
+files/file3.txt: 42 words
